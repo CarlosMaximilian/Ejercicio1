@@ -1,0 +1,255 @@
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+:root {
+  /* Font */
+  --font-stack: Helvetica, sans-serif;
+  /* Colors */
+  --primary-color: #85c1ef;
+  --secondary-color: #cd9494;
+  --secondary-color: #fbfcfc;
+  /* Alert messages */
+  /* Background */
+  --bg-info-color: #cce5ff;
+  --bg-danger-color: #f8d7da;
+  --bg-success-color: #d4edda;
+  --bg-warning-color: #fff3cd;
+  --bg-dark-color: #d6d8d9;
+  /* Border */
+  --b-info-color: #b8daff;
+  --b-danger-color: #f5c6cb;
+  --b-success-color: #c3e6cb;
+  --b-warning-color: #ffeeba;
+  --b-dark-color: #c6c8ca;
+  /* Font */
+  --f-info-color: #004085;
+  --f-danger-color: #721c24;
+  --f-success-color: #155724;
+  --f-warning-color: #856404;
+  --f-dark-color: #1b1e21;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+/* Inherit fonts for inputs and buttons */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 44px;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 38px;
+  color: var(--primary-color);
+}
+
+body {
+  font: 100% var(--font-stack);
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1024px;
+}
+
+header {
+  background: url("https://wallpapershome.com/images/pages/pic_h/23175.jpg") top right no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100vh;
+  background-color: #bd0abd;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.alert-component {
+  background-color: rgb(14, 48, 48);
+  border: 1px blue solid;
+  color: blueviolet;
+}
+
+.alert-component--secces {
+  background-color: rgb(2, 70, 22);
+  border: 1px rgb(0, 0, 0) solid;
+  color: rgb(252, 252, 252);
+}
+
+.alert-component--warning {
+  background-color: rgb(209, 255, 4);
+  border: 1px rgb(0, 0, 0) solid;
+  color: rgb(252, 252, 252);
+}
+
+.alert-component--danger {
+  background-color: rgb(219, 14, 14);
+  border: 1px rgb(0, 0, 0) solid;
+  color: rgb(252, 252, 252);
+}
+
+.alert-component--info {
+  background-color: rgb(11, 91, 184);
+  border: 1px rgb(0, 0, 0) solid;
+  color: rgb(252, 252, 252);
+}
+
+.button-component {
+  width: 261px;
+  height: 74px;
+  left: 589px;
+  top: 770px;
+  background: #309b1b;
+  border-radius: 15px;
+}
+
+.flash-component--info {
+  background-color: var(--bg-info-color);
+  border: var(--b-info-color) 1px solid;
+  color: var(--f-info-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--danger {
+  background-color: var(--bg-danger-color);
+  border: var(--b-danger-color) 1px solid;
+  color: var(--f-danger-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--success {
+  background-color: var(--bg-success-color);
+  border: var(--b-success-color) 1px solid;
+  color: var(--f-success-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--warning {
+  background-color: var(--bg-warning-color);
+  border: var(--b-warning-color) 1px solid;
+  color: var(--f-warning-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--dark {
+  background-color: var(--bg-dark-color);
+  border: var(--b-dark-color) 1px solid;
+  color: var(--f-dark-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component__text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.flash-component__button {
+  cursor: pointer;
+  width: 20px;
+}
+.flash-component__icon {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}/*# sourceMappingURL=main.css.map */

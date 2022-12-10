@@ -1,0 +1,763 @@
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+:root {
+  /* Font */
+  --font-stack: Helvetica, sans-serif;
+  /* Colors */
+  --primary-color: #000000;
+  --secondary-color: #ff0000;
+  --accent-color: #00ffff;
+  /* Alert messages */
+  /* Background */
+  --bg-info-color: #007bff;
+  --bg-danger-color: #ff0015;
+  --bg-success-color: #00ff3c;
+  --bg-warning-color: #ffc400;
+  --bg-dark-color: #1b1e21;
+  /* Border */
+  --b-info-color: #007bff;
+  --b-danger-color: #ff0019;
+  --b-success-color: #00ff3c;
+  --b-warning-color: #ffbf00;
+  --b-dark-color: #1b1e21;
+  /* Font */
+  --f-info-color: #007bff;
+  --f-danger-color: #ff0019;
+  --f-success-color: #00ff3c;
+  --f-warning-color: #ffbf00;
+  --f-dark-color: #1b1e21;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+/* Inherit fonts for inputs and buttons */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 44px;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 38px;
+  color: var(--primary-color);
+}
+
+body {
+  font: 100% var(--font-stack);
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1024px;
+}
+
+footer {
+  justify-content: space-between;
+  display: flex;
+  border: 1px solid black;
+  background-color: rgb(92, 89, 84);
+}
+footer .footer__logo {
+  text-align: center;
+  padding: 10px;
+  background-color: aqua;
+}
+footer .footer__info {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(0, 255, 34);
+}
+footer .footer__ayuda {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(184, 223, 12);
+}
+footer .footer__menu {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(158, 0, 158);
+}
+
+.form-login {
+  display: block;
+}
+.form-login .input {
+  border-radius: 38px;
+  width: 100%;
+  height: 100%;
+  border: 1px #afafaf solid;
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+.form-login .input:hover {
+  box-shadow: 0px 1px 3px #afafaf;
+}
+.form-login .input:focus {
+  outline: none;
+  box-shadow: 0px 1px 3px #afafaf;
+}
+.form-login .search-container {
+  position: relative;
+  margin-top: 2rem;
+  width: 36.5rem;
+  height: 3rem;
+  margin: auto;
+}
+
+.header-banner {
+  position: relative;
+  background-color: #0abd19;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-top: 20px;
+}
+.header-banner .nav-bar {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+header {
+  background-image: url("https://www.deanime.info/wp-content/uploads/2018/12/bulma-y-goku-peque%C3%B1os-fondo-de-pantalla-hd.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100vh;
+  background-color: #a5a1a1;
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+}
+
+.nav-bar {
+  box-shadow: rgb(0, 0, 0) 0px 0px 12px 0px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+.boton {
+  background-color: rgb(11, 37, 94);
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: rgb(255, 251, 251);
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header-text {
+  width: 100%;
+}
+
+.h1 {
+  margin: 30px;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-family: cursive;
+  width: 40%;
+}
+
+.p {
+  margin: 30px;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+  font-family: cursive;
+  font-size: large;
+  width: 40%;
+}
+
+.container-body {
+  margin: 30px;
+  font-family: cursive;
+  width: 40%;
+}
+.container-body .text {
+  text-align: justify;
+  color: rgb(255, 0, 0);
+}
+
+html {
+  background-image: radial-gradient(circle at 50% 82.65%, #596588 0, #27406c 50%, #001f51 100%);
+  overflow: hidden;
+}
+
+.body {
+  box-shadow: 10px 10px 100px black;
+  border-radius: 20px;
+  margin-top: 150px;
+  position: relative;
+  background: #afafaf;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 380px;
+}
+.body .title {
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.body .box {
+  display: inline-grid;
+  padding-left: 10px;
+}
+.body .box .name {
+  display: flex;
+}
+.body .button {
+  color: #0099CC;
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.body .btn1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+.body .btn1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.form-search__search-label {
+  display: block;
+}
+.form-search .search-container {
+  position: relative;
+  margin-top: 2rem;
+  width: 36.5rem;
+  height: 3rem;
+}
+.form-search__search-input {
+  width: 100%;
+  height: 100%;
+  border: 1px #afafaf solid;
+  border-radius: 30px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.form-search__search-input:hover {
+  box-shadow: 0px 1px 3px rgb(192, 185, 185);
+}
+.form-search__search-input:focus {
+  outline: none;
+  box-shadow: 0px 1px 3px rgb(192, 185, 185);
+}
+.form-search__search-icon {
+  width: 1rem !important;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: rgb(192, 185, 185);
+}
+.form-search__mic-icon {
+  width: 1.2rem !important;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: rgb(145, 197, 246);
+}
+
+.signupform-body {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background: rgb(166, 112, 228);
+  background: linear-gradient(132deg, rgb(166, 112, 228) 0%, rgb(136, 130, 238) 39%, rgb(136, 217, 228) 63%, rgb(89, 191, 212) 100%);
+  display: flex;
+  align-items: center;
+}
+.signupform-body .signupform-container {
+  width: 25rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgb(114, 110, 110);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 3.7rem 0.5rem;
+}
+.signupform-body .signupform-container .signup-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 4.5rem;
+}
+.signupform-body .signupform-container .signupform {
+  width: 90% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signupform-body .signupform-container .signupform input {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+}
+.signupform-body .signupform-container .signupform input:hover {
+  box-shadow: 2px 2px 5px gray;
+}
+.signupform-body .signupform-container .signupform input:focus {
+  box-shadow: none;
+}
+.signupform-body .signupform-container .signupform input::-moz-placeholder {
+  font-weight: bold;
+  opacity: 0.6;
+  color: #515151;
+  line-height: 5px;
+}
+.signupform-body .signupform-container .signupform input::placeholder {
+  font-weight: bold;
+  opacity: 0.6;
+  color: #515151;
+  line-height: 5px;
+}
+.signupform-body .signupform-container .signupform__name-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.signupform-body .signupform-container .signupform button {
+  border: none;
+  color: white;
+  font-weight: 600;
+  width: 16rem;
+  height: 3rem;
+  margin-top: 4.5rem;
+  background: rgb(166, 112, 228);
+  background: linear-gradient(132deg, rgb(166, 112, 228) 0%, rgb(136, 130, 238) 39%, rgb(136, 217, 228) 63%, rgb(89, 191, 212) 100%);
+}
+.signupform-body .signupform-container .signupform button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.checkout-body {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background: rgb(166, 112, 228);
+  background: linear-gradient(132deg, rgb(166, 112, 228) 0%, rgb(136, 130, 238) 39%, rgb(136, 217, 228) 63%, rgb(89, 191, 212) 100%);
+  display: flex;
+  align-items: center;
+}
+.checkout-body > .checkout-container {
+  width: 25rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgb(114, 110, 110);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 3.7rem 0.5rem;
+}
+.checkout-body .checkout-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 4.5rem;
+}
+.checkout-body .checkoutform {
+  width: 90% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.checkout-body .checkoutform .checkoutform-group {
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 35px 25px;
+  border-bottom: none;
+  position: relative;
+  background: #edf2f5;
+  border-bottom: 1px solid #e6edf1;
+}
+.checkout-body .checkoutform label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 10;
+  font-size: 0.8rem;
+  transform: translateY(-50%);
+  transition: 0.3s all ease;
+}
+.checkout-body .checkoutform input {
+  position: absolute;
+  padding-left: 5px;
+  left: 15px;
+  top: 23px;
+}
+.checkout-body .checkoutform .field--not-empty label {
+  margin-top: -20px;
+  background-color: transparent;
+}
+
+.hero-capsule-izq {
+  position: absolute;
+  display: flex;
+  height: 70%;
+  margin-top: 100px;
+  padding-top: 10%;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.hero-capsule-izq .hero-info {
+  justify-content: center;
+}
+
+.hero-capsule-der {
+  height: 70%;
+  margin-top: 70px;
+  margin-left: 60%;
+}
+.hero-capsule-der .title {
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.hero-capsule-der .box {
+  display: inline-grid;
+  padding-left: 10px;
+}
+.hero-capsule-der .box .name {
+  display: flex;
+}
+.hero-capsule-der .box input {
+  padding-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+.hero-capsule-der .box select {
+  padding-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+.hero-capsule-der .box .fecha {
+  justify-content: space-between;
+}
+.hero-capsule-der .button {
+  color: #0099CC;
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.hero-capsule-der .btn1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+.hero-capsule-der .btn1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.alert-component {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  background-color: rgb(14, 48, 48);
+  border: 1px blue solid;
+  color: blueviolet;
+}
+
+.alert-component--success {
+  background-color: var(--bg-success-color);
+  border: var(--b-success-color) 1px solid;
+  color: var(--f-success-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert-component--warning {
+  background-color: var(--bg-warning-color);
+  border: var(--b-warning-color) 1px solid;
+  color: var(--f-warning-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert-component--danger {
+  background-color: var(--bg-danger-color);
+  border: var(--b-danger-color) 1px solid;
+  color: var(--f-danger-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert-component--info {
+  background-color: var(--bg-info-color);
+  border: var(--b-info-color) 1px solid;
+  color: var(--f-info-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-component {
+  width: 100px;
+  left: 589px;
+  top: 770px;
+  background: #0059ff;
+  border: 2px rgb(0, 0, 0) solid;
+  border-radius: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+.button-component:hover {
+  background: red;
+  cursor: pointer;
+}
+
+.flash-component--info {
+  background-color: var(--bg-info-color);
+  border: var(--b-info-color) 1px solid;
+  color: var(--f-info-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--danger {
+  background-color: var(--bg-danger-color);
+  border: var(--b-danger-color) 1px solid;
+  color: var(--f-danger-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--success {
+  background-color: var(--bg-success-color);
+  border: var(--b-success-color) 1px solid;
+  color: var(--f-success-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--warning {
+  background-color: var(--bg-warning-color);
+  border: var(--b-warning-color) 1px solid;
+  color: var(--f-warning-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--dark {
+  background-color: var(--bg-dark-color);
+  border: var(--b-dark-color) 1px solid;
+  color: var(--f-dark-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component__text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.flash-component__button {
+  cursor: pointer;
+  width: 20px;
+}
+.flash-component__icon {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
+
+.heart-component--red {
+  border: solid 1px;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  padding: 6px;
+  width: 2rem;
+}
+
+.heart-component--red.no-border {
+  border: none;
+}
+
+.heart-component--transparent {
+  border: solid 1px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  width: 2rem;
+}
+
+.heart-component__icon {
+  fill: currentColor;
+}
+
+.nav-component {
+  position: absolute;
+  left: 900px;
+  width: 20%;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.nav-component a,
+.nav-component a:hover,
+.nav-component a:focus,
+.nav-component a:active {
+  font-size: 30px;
+  color: inherit;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+}

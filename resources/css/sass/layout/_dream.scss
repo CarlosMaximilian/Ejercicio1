@@ -1,0 +1,84 @@
+    .hero-capsule-izq {
+        // justify-content: ;
+        position: absolute;
+        display: flex;
+        // background-color: rgb(0, 4, 255);
+        // width: 100%;
+        height: 70%;
+        margin-top: 100px;
+        padding-top: 10%;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+        .hero-info{
+            justify-content: center;
+        }
+    
+    }
+
+    .hero-capsule-der{
+
+        height: 70%;
+        margin-top: 70px;
+        margin-left: 60%;
+        .title {
+            padding-top: 40px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .box {
+            display: inline-grid;
+            padding-left: 10px;
+    
+            .name {
+                // justify-content: space-between;
+                display: flex;
+            }
+            input{
+                padding-top: 10px;
+                margin-bottom: 15px;
+                margin-left: 5px;
+            }
+            select{
+                padding-top: 10px;
+                margin-bottom: 15px;
+                margin-left: 5px;
+            }
+            .fecha{
+                justify-content: space-between;
+            }
+        }
+    
+        .button {
+            color: #0099CC;
+            background: transparent;
+            border: 2px solid #0099CC;
+            border-radius: 6px;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    
+        .btn1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+    
+        .btn1:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+    
+    }
+    

@@ -1,0 +1,180 @@
+.fondo_hotel {
+  display: flex;
+  // background: url("../../../images/Hotel.jpg") top right no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  
+  .container {
+    position: absolute;
+    width: 400px;
+    text-align: left;
+    padding-top: 200px;
+    margin-left: 50px;
+  
+    h1 {
+        text-align: left;
+        padding: 20px 0px 20px;
+        font-size: 45px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #ffffff;
+    }
+  
+    p {
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+        font-size: 17px;
+  
+    }
+  
+    .botonread {
+        color: rgb(248, 241, 238);
+        width: 130px;
+        height: 35px;
+        background-color: rgb(247, 102, 58);
+        border-radius: 5px;
+        border: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+        &:hover {
+            cursor: pointer;
+            color: black;
+            background: white;
+        }
+    }
+  }
+  
+  .formulario {
+    position: absolute;
+    height: 40rem;
+    width: 25rem;
+    top: 40px;
+    left: 70%;
+    background-color: rgba($color: #464646, $alpha: .8);
+    
+    border-radius: 20px;
+  
+    h2 {
+        color: rgb(246, 247, 249);
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 40px;
+    }
+  }
+  
+  label {
+    color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .checkoutformulario {
+    padding-left: 20px;
+    align-items: flex-start;
+    padding-bottom: 30px;
+  }
+  
+  .group-form-firtname {
+    position: absolute;
+  
+    .firsname {
+        display: block;
+        width: 150px;
+        height: 25px;
+    }
+  }
+  
+  .group-form-lastname {
+    .labellastname {
+        margin-left: 200px;
+        margin-bottom: 20px;
+    }
+  
+    .lastname {
+        margin-left: 200px;
+        display: block;
+        width: 150px;
+        height: 25px;
+    }
+  }
+  
+  .group-form-email {
+    margin-top: 40px;
+  
+    .email1 {
+        display: block;
+        width: 350px;
+        height: 25px;
+    }
+  }
+  
+  .group-form-room {
+    margin-top: 20px;
+  
+    .room {
+        display: block;
+        width: 350px;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+  }
+  
+  .group-form-checkin {
+    position: absolute;
+  
+    .checkin {
+        display: block;
+        width: 150px;
+        height: 25px;
+    }
+  }
+  
+  .group-form-checkout {
+    .labelout {
+        margin-left: 200px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+  
+    .checkout {
+        margin-left: 200px;
+        display: block;
+        width: 150px;
+        height: 25px;
+    }
+  }
+  
+  .group-form-guests {
+    margin-top: 23px;
+  
+    .guests {
+        display: block;
+        width: 150px;
+        height: 25px;
+    }
+  }
+  
+  .botonbook {
+    color: rgb(248, 241, 238);
+    margin-top: 45px;
+    width: 180px;
+    height: 35px;
+    background-color: rgb(247, 102, 58);
+    border-radius: 5px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+  
+    &:hover {
+        cursor: pointer;
+        color: black;
+        background: white;
+    }
+  }
+
+}
+

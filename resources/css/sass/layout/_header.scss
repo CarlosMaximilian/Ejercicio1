@@ -1,0 +1,93 @@
+.header-banner {
+    position: relative;
+
+    background-color: #0abd19;
+    // background: url("https://www.xtrafondos.com/wallpapers/casa-kame-de-dragon-ball-3963.jpg") top right no-repeat;
+    // background: url("https://www.espanol.marriott.com/hotels/hotel-photos/evnlc-the-alexander-a-luxury-collection-hotel-yerevan/#");
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 20px;
+    .nav-bar{
+        // padding-bottom: 20px;
+        width: 100%;
+        justify-content: space-between; 
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        // border: 1px solid black;
+        
+        
+    }
+}
+
+header {
+    background-image: url("https://www.deanime.info/wp-content/uploads/2018/12/bulma-y-goku-peque%C3%B1os-fondo-de-pantalla-hd.png");
+    // background: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/7f/66/5e/exterior-from-pool.jpg?w=700&h=-1&s=1");
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+     background-color: #a5a1a1;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+
+}
+.nav-bar {
+    box-shadow: rgb(0, 0, 0) 0px 0px 12px 0px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+//   background-color: rgb(255, 185, 185); 
+}
+
+.boton {
+    
+    background-color: rgb(11, 37, 94);
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 25px;
+    // font-family: cursive;
+    color: rgb(255, 251, 251);
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-text {
+width: 100%;
+}
+
+.h1 {
+    margin: 30px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    width: 40%;
+}
+
+.p {
+    margin: 30px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: large;
+    width: 40%;
+}
+
+.container-body{
+    margin: 30px;
+   font-family: cursive;
+    width: 40%; 
+    
+.text{
+  text-align: justify;
+    color: rgb(255, 0, 0);
+
+    }
+}

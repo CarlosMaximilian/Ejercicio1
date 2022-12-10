@@ -1,0 +1,16 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100%;
+  color: green;
+  background-color: rgb(14, 63, 82);
+}
+
+.alert-component {
+  background-color: aqua;
+  border: 1px blue solid;
+  color: rgb(113, 3, 185);
+}/*# sourceMappingURL=ejemplo.css.map */
